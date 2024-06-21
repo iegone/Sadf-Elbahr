@@ -158,6 +158,9 @@ a{
   .logo {
     font-size: medium;
   }
+  section{
+    padding: 10px;
+  }
   .card img {
     width: 40px;
   }
