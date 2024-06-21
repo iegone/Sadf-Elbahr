@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-TghjXoo8NnI2xeoK0sSsMcs9fnz6GSP5FOKErD2B5a1veaLRxt3DqRzrG3H7R/8NLzkrIurKt75wT5AdZ+3Z3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>حول</title>
+
+    <style>
+    :root {
+  --main-color: #b30808;
+  --secondary-color: #f5f5f5;
+  --text-color: #333;
+  --accent-color: #e74c3c;
+  --header-bg-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+header {
+  width: 100%;
+  background: var(--header-bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding: 0 22px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header div {
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px;
+  padding: 5px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  padding-top: 70px;
+}
+
+.about-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hiro h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hiro p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: var(--main-color);
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <div class="logo"><img src="./image/logo.png" alt="" /></div>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li>حول</li>
+          </ul>
+        </div>
+      </header>
+      <section class="about-section">
+        <div class="hiro">
+          <h1>من نحن</h1>
+          <p>
+            شركة صدف البحر للسياحة والسفر هي شركة رائدة في مجال تقديم خدمات
+            السياحة والسفر وإصدار التأشيرات. نحن ملتزمون بتقديم تجربة سفر مميزة
+            وسلسة لكل عميلنا.
+          </p>
+          <p>
+            نقوم بترتيب كافة الأوراق اللازمة للحصول على التأشيرات بكل دقة
+            واتقان، لضمان تجربة سفر خالية من الإجراءات الإدارية المعقدة.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/profile.php?id=61560996996797"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-snapchat"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>© 2024 جميع الحقوق محفوظة.</p>
+      </footer>
+    </div>
+  </body>
+</html>
