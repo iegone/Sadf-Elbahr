@@ -1,104 +1,146 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>خدمات التأشيرات</title>
     <style>
-        :root{
-            --main-color: #e08f0d;
-            
-        }
-        body {
-            font-family: 'Cairo', sans-serif;
-            direction: rtl;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: var(--main-color);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+      :root {
+        --main-color: rgb(179, 139, 8);
+        --secondary-color: #f0f0f0;
+        --text-color: #333;
+        --accent-color: rgb(231, 177, 60);
+      }
+      body {
+        font-family: "Cairo", sans-serif;
+        direction: rtl;
+        background-color: var(--secondary-color);
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+      }
+      header {
+        background-color: var(--main-color);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .service {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      .service h2 {
+        color: var(--main-color);
+        margin-bottom: 10px;
+      }
+      .service ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .service ul li {
+        margin-bottom: 10px;
+      }
+      .price {
+        font-weight: bold;
+        color: var(--accent-color);
+      }
+      footer {
+        background-color: var(--main-color);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+      @media (max-width: 768px) {
         .container {
-            width: 90%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          padding: 15px;
+          gap: 15px;
         }
         .service {
-            border-bottom: 1px solid #ddd;
-            padding: 20px 0;
+          padding: 15px;
         }
-        .service:last-child {
-            border-bottom: none;
+      }
+      @media (max-width: 480px) {
+        header {
+          padding: 15px;
+        }
+        .container {
+          padding: 10px;
+          gap: 10px;
+        }
+        .service {
+          padding: 10px;
         }
         .service h2 {
-            color: var(--main-color);
-            margin-bottom: 10px;
+          font-size: 1.2em;
         }
-        .service ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .service ul li {
-            margin-bottom: 5px;
-        }
-        .price {
-            font-weight: bold;
-            color: #e74c3c;
-        }
-        footer {
-            background-color: var(--main-color);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>التأشيرات المتاحة لسلطنة عمان</h1>
+    </header>
 
-<header>
-    <h1>التأشيرات المتاحة لدولة عمان</h1>
-</header>
-
-<div class="container">
-    <div class="service">
-        <h2>تأشيرة سياحية</h2>
-        <ul>
+    <div class="container">
+        <div class="service">
+          <h2>تأشيرة سياحية</h2>
+          <ul>
             <li>المدة: شهر (قابلة للتمديد لمدة ٤ شهور)</li>
-            <li class="price">سعر التأشيرة: ٢٧ ريال بدلاً من ٣٠</li>
+            <li class="price">سعر التأشيرة: ٢٧ ريال</li>
             <li>متوفر الدفع بالجنيه المصري والعملات المحلية للدول العربية</li>
-        </ul>
-    </div>
-    <div class="service">
-        <h2>تأشيرة سياحية للسودانيين</h2>
+          </ul>
+        </div>
+        <div class="service">
+          <h2>تأشيرة سياحية</h2>
+          <ul>
+            <li>المدة: ١٥ يوم (قابلة للتمديد ١٠ ايام)</li>
+            <li class="price">سعر التأشيرة: ١٥ ريال </li>
+            <li>متوفر الدفع بالجنيه المصري والعملات المحلية للدول العربية</li>
+          </ul>
+        </div>
+        
+      <div class="service">
+        <h2>تأشيرة للسودانيين</h2>
         <ul>
-            <li>المدة: شهر (قابلة للتمديد لمدة ٤ شهور)</li>
-            <li class="price">سعر التأشيرة: ١٣٥</li>
-            <li>متوفر الدفع بالجنيه السوداني</li>
+          <li>المدة: شهر (قابلة للتمديد لمدة ٤ شهور)</li>
+          <li class="price">سعر التأشيرة: ١٣٥ جنيه سوداني</li>
+          <li>متوفر الدفع بالجنيه السوداني</li>
         </ul>
-    </div>
-    <div class="service">
-        <h2>تأشيرات أخرى وإقامات</h2>
+      </div>
+      
+      <div class="service">
+        <h2>إقامات</h2>
         <ul>
-            <li>نقدم أيضاً مجموعة من التأشيرات الأخرى والإقامات لخدمات متنوعة.</li>
+          <li>المدة: سنة (قابلة للتمديد)</li>
+          <li class="price">سعر الإقامة: ٧٥٠ ريال عماني </li>
+          <li>متوفر الدفع بالجنيه المصري والعملات المحلية للدول العربية</li>
         </ul>
+      </div>
     </div>
-</div>
-<!-- 
-<footer>
-    <p>© 2024 جميع الحقوق محفوظة.</p>
-</footer> -->
 
-</body>
+    <footer>
+      <p>© 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+  </body>
 </html>
